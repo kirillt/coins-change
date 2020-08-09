@@ -1,0 +1,20 @@
+[package]
+name = "coins-change"
+version = "0.1.0"
+authors = ["Kirill Taran <kirill@taran.space>"]
+edition = "2018"
+
+[lib]
+name = "coins"
+path = "src/lib.rs"
+
+[dependencies]
+tinyset = "0.4.4"
+rand = "0.7.3"
+
+[dev-dependencies]
+criterion = "0.3"
+
+[[bench]]
+name = "minimal_number"
+harness = false
